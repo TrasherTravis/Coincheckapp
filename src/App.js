@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './CoinSelectionBoard.css'; // Import the CSS file for styling
 
 function CoinCheckBoard() {
+  
   // Initialize the state to store the selected coins and the board
   const [selectedCoins, setSelectedCoins] = useState([]);
-
   // Function to handle when the user clicks on a coin
   const handleCoinSelect = (id) => {
     // Check if the coin is already selected
@@ -17,8 +17,12 @@ function CoinCheckBoard() {
     } else {
       // Add the coin to the selected coins list
       setSelectedCoins([...selectedCoins, id]);
-    }
+      
+    } 
   };
+
+
+  
 
   // Generate the selected coin grid
   const selectedCoinList = [];
@@ -38,11 +42,10 @@ function CoinCheckBoard() {
   }
 
   return (
-    
-    <div className="coin-selection-board"> 
-    
+  
+      <div className="coin-selection-board"> 
+      
       <div className="coin-board">
-        
         {[...Array(80)].map((_, index) => {
           const id = index + 1;
           const isSelected = selectedCoins.includes(id);
@@ -57,9 +60,8 @@ function CoinCheckBoard() {
         })}
       </div>
       <div className="selected-coin-board">
-        <h2 className="selected-coin-heading">40 COINS ORIGINAL</h2>
         <div className="selected-coin-grid">{selectedCoinList}</div>
-      </div>
+        </div>
     </div>
   );
 }

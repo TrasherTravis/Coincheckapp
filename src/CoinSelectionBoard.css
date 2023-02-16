@@ -1,19 +1,23 @@
+header img{
+
+  width: 200px;
+  height: 70px;
+  align-items: center;
+  display: block;
+justify-content: center;
+margin: 0px 600px 0px 600px;
+}
+
 .coin-selection-board {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 1500px;
-  border: 1px solid #ada8ae;
-  margin: 20px;
+  height: 700px;
+  width: 45%;
+  padding: 0px 50px 0px 50px;
+  border: 1px solid #f5f2f5;
   background-color: rgb(241, 240, 240);
   
-}
-
-.selection-coin-heading{
-  border: 1px solid #ada8ae;
-  font-size: 1.5rem;
-  margin: 50px;
-  text-align: center;
 }
 
 .coin-board {
@@ -21,7 +25,7 @@
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(10, 1fr);
   gap: 10px;
-  border: 3px solid #ccc;
+  border: 1px solid #fdfbfb;
   margin: 20px;
   padding: 10px;
 }
@@ -31,14 +35,17 @@
   justify-content: center;
   align-items: center;
   background-color: #d5d1d1;
-  border: 1px solid #ccc;
+  border: 0px solid #131212;
   cursor: pointer;
-  width: 100px;
+  width: 50px;
 }
 
+.coin:hover{
+  background-color: black;
+}
 .coin img{ 
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .coin.selected {
@@ -47,34 +54,24 @@
 }
 
 .selected-coin-board {
-  border: 1px solid #ada8ae;
-  width: 90%;
-  height: 100%;
+  display:flex;
+  border: 0px solid #f9f7f9;
   justify-content: center;
   align-items: center;
-}
-
-.selected-coin-heading {
-  font-size: 1.5rem;
-  border: 1px solid #fefdfd;
-  padding: 50px;
-  width: 70%;
-  justify-content: center;
-  text-align: center;
-  
+  height: 1000px;
+  width: 100%;
+  margin: 100px;
 }
 
 .selected-coin-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(20, 1fr);
-  width: 45%;
-  height: 70%;
+  width: 100%;
+  height: 600px;
+  padding: 200px;
   align-items: center;
   justify-content: center;
-  border: 3px solid #ccc6c6;
-  padding: 5px;
-  margin: 80px 200px 0px 200px;
   
 
 }
@@ -83,14 +80,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0px solid #15531f;
+  border: 1px solid #e6e6e3;
+  padding: 2px;
 
 }
 
 .selected-coin-cell {
-  height: 93px;
-  width: 100px;
-  border: 1px solid #ccc;
+  height: 45px;
+  width: 45px;
+  border: 0px solid #c9c6c6;
+  background-color: #ebe9e9;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +98,7 @@
 }
 
 .selected-coin-cell img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 42px;;
+  max-height: 42px;
 }
 
